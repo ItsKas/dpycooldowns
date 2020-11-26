@@ -15,7 +15,7 @@ setuptools.setup(
     description="Cooldowns that dont reset on bot off time.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/bigpuppy9999/dpycooldowns",
+    url="https://github.com/ItsKas/dpycooldowns",
     packages=setuptools.find_packages("pymongo"),
     classifiers=[
         "Programming Language :: Python :: 3",
