@@ -8,11 +8,11 @@ with open("README.md", "r") as fh:
 # python -m twine upload dist/* (UPDATE)
 
 setuptools.setup(
-    name="cooldown", 
+    name="cooldown",
     version=cooldown.__version__,
     author="Lukas Canter, Leo Rooney",
     author_email="lilcanter07@gmail.com, bigpuppy99991@gmail.com",
-    description="Cooldowns that dont reset on bot off time.",
+    description="Cooldowns that dont reset when the bot is rebooted.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/ItsKas/dpycooldowns",
