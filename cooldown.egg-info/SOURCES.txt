@@ -1,0 +1,6 @@
+README.md
+setup.py
+cooldown.egg-info/PKG-INFO
+cooldown.egg-info/SOURCES.txt
+cooldown.egg-info/dependency_links.txt
+cooldown.egg-info/top_level.txt
