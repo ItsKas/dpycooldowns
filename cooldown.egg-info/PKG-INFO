@@ -1,12 +1,34 @@
 Metadata-Version: 2.1
 Name: cooldown
-Version: 0.1.0
-Summary: Cooldowns that dont reset on bot off time.
-Home-page: https://github.com/bigpuppy9999/dpycooldowns
+Version: 0.1.5
+Summary: Cooldowns that dont reset when the bot is rebooted.
+Home-page: https://github.com/ItsKas/dpycooldowns
 Author: Lukas Canter, Leo Rooney
 Author-email: lilcanter07@gmail.com, bigpuppy99991@gmail.com
 License: UNKNOWN
-Description: UNKNOWN
+Description: Dpycooldowns is easy to use, simply create a cooldown manager, then create a cooldown with the manager as an argument.
+        To make a cooldown, see below
+        ```python
+        cooldown = Cooldown.DpyCooldown(cooldownmanager, ctx, time)
+        ```
+        ```python
+        import discord
+        from discord.ext import commands
+        from cooldown import Cooldown
+        
+        bot = commands.Bot(command_prefix="prefix")
+        cooldownmanager = Cooldown.CooldownManager("mongodb connection string", "mongodb database", "mongodb collection")
+        @bot.command()
+        async def test(ctx):
+        
+            cooldown = Cooldown.DpyCooldown(cooldownmanager, ctx, 1)
+            if not cooldown.is_done:
+                return await ctx.send(f"You cannot use this command for another {cooldown.tostr}")
+            await ctx.send("Test")
+        
+        bot.run("token")
+        ```
+        
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License

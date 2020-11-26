@@ -1,6 +1,11 @@
+.gitattributes
+LICENCE
 README.md
 setup.py
+cooldown/__init__.py
 cooldown.egg-info/PKG-INFO
 cooldown.egg-info/SOURCES.txt
 cooldown.egg-info/dependency_links.txt
 cooldown.egg-info/top_level.txt
+cooldown/__pycache__/__init__.cpython-38.pyc
+dist/cooldown-0.1.0-py2.py3-none-any.whl
